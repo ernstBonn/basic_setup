@@ -28,10 +28,11 @@ class MainTest {
     @Test
     void checkIfCapitalOrNot(){
         //given
+        boolean trueFalse = false;
         String password = "Something";
         //when
-        boolean actual = Main.checkIfCapitalOrNot(password);
+        boolean actual = Main.checkIfCapitalOrNot(password, trueFalse);
         //then
-        assertTrue(actual);
+        assertFalse(actual);
     }
 }
