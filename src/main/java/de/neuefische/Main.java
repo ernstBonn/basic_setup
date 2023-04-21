@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(checkPasswordLength("something"));
         System.out.println(checkIfContainsNumber("7"));
+        System.out.println(checkIfCapitalOrNot("paSsword"));
     }
 
     public static int checkPasswordLength(String password) {
@@ -24,6 +25,16 @@ public class Main {
                     trueFalse = true;
                 }
             }
+        return trueFalse;
+    }
+    public static boolean checkIfCapitalOrNot(String password){
+        boolean trueFalse = false;
+        char[] sc = password.toCharArray();
+        for (int i = 0; i < sc.length; i++){
+                if (Character.isUpperCase(sc[i])){
+                    trueFalse = true;
+                }
+        }
         return trueFalse;
     }
 }

@@ -25,5 +25,13 @@ class MainTest {
         //then
         assertTrue(actual);
     }
-
+    @Test
+    void checkIfCapitalOrNot(){
+        //given
+        String password = "Something";
+        //when
+        boolean actual = Main.checkIfCapitalOrNot(password);
+        //then
+        assertTrue(actual);
+    }
 }
